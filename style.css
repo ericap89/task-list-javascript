@@ -21,3 +21,7 @@ body{
 #task-title {
     font-family: 'Anton', sans-serif;
 }
+
+.collection i {
+    color:#e57373 ;
+}

@@ -10,15 +10,15 @@ loadEventListeners();
 
 // load event listeners function
 function loadEventListeners(){
-    //DOm load 
+    // DOM load 
     document.addEventListener('DOMContentLoaded', getTasks)
     // Add task event
     form.addEventListener('submit', addTask);
-    //remove task event
+    // Remove task event
     taskList.addEventListener('click', removeTask);
-    //clear btn 
+    // Clear task btn 
     clearBtn.addEventListener('click', clearTask);
-    //Filter through lsit 
+    // Filter through task list  
     filter.addEventListener('keyup', filterTask);
 
 
@@ -59,6 +59,7 @@ function getTasks(){
 }
 // Add task
 function addTask(e){
+    // Check for Empty Value 
     if(taskInput.value === ''){
         alert('Please Add a task');
         return false
