@@ -60,7 +60,8 @@ function getTasks(){
 // Add task
 function addTask(e){
     if(taskInput.value === ''){
-        alert('Add a task');
+        alert('Please Add a task');
+        return false
     }
     // Create li element 
     const li = document.createElement('li');
@@ -113,7 +114,7 @@ function storeTaskInLocalStorage(task){
 function removeTask(e) {
     if(e.target.parentElement.classList.contains
         ('delete-item')) {
-        if(confirm('Are you sure?')) {
+        if(confirm('Are you sure you want to delete this task?')) {
        e.target.parentElement.parentElement.remove();
 
        removeTaskFromLocalStorage(e.target.parentElement.parentElement);

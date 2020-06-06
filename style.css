@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #eeeeee;
+    
+}
+#main {
+    margin-top:4em;
+}
+
+.collection {
+    height: 30vh;
+    overflow: scroll;
+   
+}
+
+#header{
+    font-family: 'Anton', sans-serif;
+}
+
+#task-title {
+    font-family: 'Anton', sans-serif;
+}
